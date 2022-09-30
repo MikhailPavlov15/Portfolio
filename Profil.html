@@ -1,79 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title></title>
-  <meta name="description"
-    content="">
+  <meta name="description" content="">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_lap.css">
+  <link rel="stylesheet" type="text/css" href="sim-slider-styles.css">
 </head>
+
 <body>
-    <div class="container  mx-auto flex flex-row " >
-    <div class="menu basis-1/5  bg-yellow-300">
-         <button class="font-semibold  p-5  hover:bg-yellow-400 btnjs btn-general block">
-        Главная
-          </button>
-        <button class="font-semibold  p-5   hover:bg-yellow-400 btnjs btn-about-me block">
+  <div class="decoration relative bg-[#1B212F] h-screen p-1 md:max-w-full z-0">
+    <svg class="lap absolute z-10">
+      <circle cx="1000" cy="70" r="350" fill="#FFCC73"></circle>
+      <circle cx="650" cy="1000" r="350" fill="#FFCC73"></circle>
+      <circle cx="1500" cy="800" r="350" fill="#FFCC73"></circle>
+    </svg>
+    <div
+      class="container mx-auto h-[30rem] xl:h-[40rem] my-36 mb-96 md:max-w-4xl lg:max-w-5xl 2xl:max-w-7xl flex md:flex-row relative z-20">
+      <div class="menu text-white font-semibold md:basis-1/5  bg-[#191D28] ">
+        <button
+          class=" m-5 p-2 md:w-[10rem] rounded-full bg-[#FFCC73] hover:bg-[#FFCC73] text-black hover:text-black btnjs btn-general block">
+          Главная
+        </button>
+        <button
+          class="m-5 p-2 md:w-[10rem] rounded-full hover:bg-[#FFCC73] text-white hover:text-black btnjs btn-about-me block">
           Обо мне
-        </button>     
-            <button class="font-semibold   p-5 hover:bg-yellow-400 btnjs btn-worck-me block">
+        </button>
+        <button
+          class="m-5 p-2 md:w-[10rem] rounded-full hover:bg-[#FFCC73] text-white hover:text-black btnjs btn-worck-me block">
           Мои работы
-        </button>     
-        <button class="font-semibold   p-5 hover:bg-yellow-400 btnjs btn-skills-me block">
+        </button>
+        <button
+          class="m-5 p-2 md:w-[10rem] rounded-full hover:bg-[#FFCC73] btnjs text-white hover:text-black btn-skills-me block">
           Навыки
-        </button> 
-        <button class="font-semibold   p-5 hover:bg-yellow-400 btnjs btn-contacts-me block">
+        </button>
+        <button
+          class="m-5 p-2 md:w-[10rem] rounded-full hover:bg-[#FFCC73] btnjs text-white hover:text-black btn-contacts-me block">
           Контакты
         </button>
-    </div>
-    <div class="info text-center p-5 basis-4/5  bg-blue-300">
-      <div class="blog general ">
-        <p>Мишенька</p>
       </div>
-      <div class="blog about hidden">
-        <div class="heading text-center p-5  bg-green-300">
-            <h1 >Обо мне</h1>
+      <div class="info text-center p-5 md:basis-4/5  bg-[#191D28]">
+        <div class="blog flex flex-row items-center justify-around general mt-10">
+          <div class=" text-white text-2xl tracking-wide font-bold">
+            <h1>Frontend
+              developer</h1>
+          </div>
+          <div class="md:w-[20rem]">
+            <img src="foto\me_general.png">
+          </div>
         </div>
-        <div class="flex flex-row">
+        <div class="blog about bg-cover bg-[url(foto/back_about.png)]  hidden">
+          <div class="heading text-center text-2xl text-white p-5 ">
+            <h1>Обо мне</h1>
+          </div>
+          <div class="flex flex-row">
             <div class="basis-1/2">
-                <img  src="foto-me.png">
+              <img src="foto\about_me.png">
             </div>
-            <div class="basis-1/2 self-center p-10">
-             <p> Меня зовут Михаил, мне 24 года. После школы поступил в университет по напрагвлению агрохимия, но после того как его закончил, понял что это мне не так интересно как веб-программирование. Купил курсы на htmlacademy по направлению frontend-разработчик. После того как закончил обучение, сразу же начал искать работу и набираться опыта. Студии малоопытных не берут, поэтому мне помог брат и дал задание сверстать страницу по макету figma, а главное использовать библиотеку tailwind. С задачейй я справился и пошел искать дальше новые задания.
-               Я довольно хорошо и быстро усваиваю новый материал и думаю смогу освоить любые инструменты которые использует компания в которую я попаду работать.
-             </p>
+            <div class="basis-1/2 text-left text-white p-10">
+              <p> Меня зовут Михаил.
+
+                После школы поступил в университет по напрагвлению агрохимия, но после того, как его закончил, понял,
+                что это мне не так интересно, как веб-программирование. Купил курсы на htmlacademy по направлению
+                frontend-разработчик. После того как закончил обучение, сразу же начал искать работу и набираться опыта.
+                Студии малоопытных не берут, поэтому мне помог брат и дал задание сверстать страницу по макету figma, а
+                главное использовать библиотеку tailwind. С задачейй я справился и пошел искать дальше новые задания.
+
+                Я довольно хорошо и быстро усваиваю новый материал и, думаю, смогу освоить любые инструменты, которые
+                использует компания, в которую я попаду работать.
+              </p>
             </div>
+          </div>
         </div>
-      </div>  
-      <div class="blog worck bg-red-300 hidden ">
-        <ul>
-         <li>это портфолио</li>
-         <li>это портфолио</li>
-         <li>это портфолио</li>
-         <li>это портфолио</li>
-        </ul>       
+        <div class="blog worck hidden ">
+          <div class="sim-slider">
+            <ul class="sim-slider-list">
+              <li><img src="screen.gif" alt="screen"></li>
+              <li class="sim-slider-element"><img src="foto/my_work.jpg" alt="1"><a class="text-white"
+                  href="https://github.com/MikhailPavlov15/Portfolio.git">Ссылка на Git</a></li>
+              <li class="sim-slider-element"><img src="foto/not_work.jpg" alt="2"></li>
+              <li class="sim-slider-element"><img src="foto/not_work.jpg" alt="3"></li>
+            </ul>
+            <div class="sim-slider-arrow-left"></div>
+            <div class="sim-slider-arrow-right"></div>
+            <div class="sim-slider-dots"></div>
+          </div>
+        </div>
+        <div class="blog skills text-white text-xl text-left flex flex-row items-center hidden">
+          <div class="basis-1/2">
+            <div class="mt-20  relative">
+              <img class="absolute left-0 animate-spin" src="foto/gear.png">
+              <img class="absolute right-6 animate-pulse" src="foto/heart.png">
+              <img  class="ml-10 inset-y-1.5"  src="foto/skills.png">
+            </div>
+          </div>
+          <div class="basis-1/2">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Java Script</li>
+              <li>Git</li>
+              <li>Tailwind</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
+        <div class="blog contacts flex flex-row gap-10 justify-center text-white hidden">
+           <div class="vk"><a href="https://vk.com/wicked_one69"><img src="foto/vk.png"></a></div>
+           <div class="inst"><a href="https://www.instagram.com/69mikle69/"><img src="foto/inst.png"></a></div>
+           <div class="mail"><a href="https://mailto:Mischa.pavlov15@gmail.com"><img src="foto/mail.png"></a></div>
+           <div class="whats"><a href="https://api.whatsapp.com/send/?phone=79216327671&text=Здравствуйте%2C+хотим+взять+вас+на+работу"><img src="foto/whats.png"></a></div>
+           <div class="tlg"><a href="https://t.me/MikhailPavlovOne"><img src="foto/tlg.png"></a></div>
+        </div>
       </div>
-      <div class="blog skills bg-orange-300 hidden">
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Java Script</li>
-          <li>Tailwind</li> 
-        </ul>
-      </div>
-      <div class="blog contacts bg-green-300 hidden">
-        <ul>
-          <li>Телефон - 89216327671</li>
-        </ul>
 
-      </div>
-    </div> 
     </div>
-
-
-    <footer>
-    
-    </footer>
-    <script src="buttons.js"></script>
+  </div>
+  <script src="buttons.js"></script>
+  <script src="sim-slider.js"></script>
+  <script>new Sim()</script>
 </body>
