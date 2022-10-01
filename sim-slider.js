@@ -8,7 +8,7 @@ function Sim(sldrId) {
 		this.sldrRoot = document.querySelector('.sim-slider')
 	};
 
-	// Slider objects
+
 	this.sldrList = this.sldrRoot.querySelector('.sim-slider-list');
 	this.sldrElements = this.sldrList.querySelectorAll('.sim-slider-element');
 	this.sldrElemFirst = this.sldrList.querySelector('.sim-slider-element');
@@ -16,14 +16,14 @@ function Sim(sldrId) {
 	this.rightArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-right');
 	this.indicatorDots = this.sldrRoot.querySelector('div.sim-slider-dots');
 
-	// Initialization
+
 	this.options = Sim.defaults;
 	Sim.initialize(this)
 };
 
 Sim.defaults = {
 
-	// Default options for the slider
+
 	loop: true,     // Бесконечное зацикливание слайдера
 	auto: true,     // Автоматическое пролистывание
 	interval: 5000, // Интервал между пролистыванием элементов (мс)
@@ -87,14 +87,14 @@ Sim.prototype.dotOff = function(num) {
 
 Sim.initialize = function(that) {
 
-	// Constants
+
 	that.elemCount = that.sldrElements.length; // Количество элементов
 
-	// Variables
+
 	that.currentElement = 0;
 	let bgTime = getTime();
 
-	// Functions
+
 	function getTime() {
 		return new Date().getTime();
 	};
@@ -107,7 +107,7 @@ Sim.initialize = function(that) {
 		}, that.options.interval)
 	};
 
-	// Start initialization
+
 	if(that.elemCount <= 1) {   // Отключить навигацию
 		that.options.auto = false;
                 that.options.arrows = false; that.options.dots = false;
